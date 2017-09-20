@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="css/grid.css" type="text/css" />
+    </head>
+    <body>
+        <header>
+                <div class="hero-text-box">
+                    <h1>Bmi Calculator</h1>
+                </div>
+                <div class="row form-folder">
+                    <div class="col span-2-of-2">
+                         <h2 id="answer">Dear <span id="userName"></span>, you are <span id="bmi-result"></span></h2>
+                    </div>
+                    <form>
+                          <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                                </div>
+                          </div>
+                          <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="name">Gender</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                <select  id="gender">
+                                    <option value="male" selected>Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                        </div>
+                          </div>
+                          <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="heigth">Heigth</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <input type="number" name="heigth" id="heigth" placeholder="Your heigth" required>
+                                </div>
+                          </div>
+                          <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="weigth">Weigth</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <input type="number" name="weigth" id="weigth" placeholder="Your weigth" required>
+                                </div>
+                          </div>
+                          
+                          <div class="row">
+                              
+                                  <input type="button" value="calculate" onclick="bmi()" class="btn"/>    
+                              
+                              
+                              
+                                  <input type="button" value="reset" onclick="reset(); resetH2();" class="btn"/>
+                             
+                          </div>
+                    </form>
+                    
+                    
+                </div>
+        </header>
+        
+    
+        <script type="text/javascript" src="scripts/script.js"></script>
+    </body>
+</html>
+
+
+
+
+       
+       

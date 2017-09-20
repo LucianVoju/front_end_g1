@@ -1,0 +1,89 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Contact form</title>
+        <link   href="grid.css" type="text/css" rel="stylesheet">
+        <link   href="style.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    
+    <body>
+        <section class="contact-form">
+            <div class="row title">
+                <h1>Enter your contact details</h1>
+            </div>
+            <div class="row clearfix" id="confirmation-banner">
+                <p class="col span-2-of-3">Thank you for contacting us, <span id="js-lastname-banner"></span></p>
+                <p class="col" id="close">X</p>
+            </div>
+            <form id="form">
+                    <div class="row clearfix">
+                    <div class="col span-1-of-3">
+                        <label for="first-name">First Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="first-name" id="first-name" placeholder="your first name">
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col span-1-of-3">
+                        <label for="last-name">Last Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="last-name" id="last-name" placeholder="your last name">
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col span-1-of-3">
+                        <label>Gender</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <label for="gender-male">Male</label>
+                        <input type="radio" id="gender-male" value="Male" name="gender" checked >
+                        <label for="gender-female">Female</label>
+                        <input type="radio" id="gender-female" value="Female" name="gender">
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col span-1-of-3">
+                        <label>Spune 2 cuvinte</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="your message here" id="text-area" ></textarea>
+                    </div>
+                </div>
+                
+                <div class="row clearfix">
+                    <div class="col span-1-of-3">
+                        <label>Your Image</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="upload-image" placeholder="enter yout image URL here" id="image-submit"/>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <input type="button" class="col span-1-of-3" id="submit-button" value="Submit">
+                </div>
+            </form>           
+        </section>
+        
+        <section>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <h3>Previous contact</h3>
+                    <br>
+                    <img src="http://www.h2dr.in/wp-content/uploads/2016/07/user.png" id="user-image"></img>
+                    <p>First name: <span id="first-name-display"></span></p>
+                    <p>Last name: <span id="last-name-display"></span></p>
+                    <p>Gender: <span id="gender-display"></span></p>
+                    <p>Message: <span id="message-display"></span></p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+

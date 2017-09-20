@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="grid.css" type="text/css" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/places.js@1.4.15"></script>
+        <script type="text/javascript" src="app.js"></script>
+        
+        
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <div class="row">
+            <input type="search" id="city" class="form-control" placeholder="Vremea in ?" />
+        </div>
+        
+        <div class="row">
+            <input type="radio" name="language" value="en-US" /> English
+            <input type="radio" name="language" value="ro-RO" /> Romana
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <p id="city-name"></p>
+                <img  id="weather-img"></img>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

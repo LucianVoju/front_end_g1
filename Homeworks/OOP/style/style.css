@@ -1,0 +1,34 @@
+html{
+    line-height: 1.6;
+}
+#navigationBar{
+    margin:0 auto;
+}
+
+.pagination{
+    margin: 0 auto;
+}
+
+.article-post:hover {
+    cursor: pointer;
+    background-color: #f4f4f4;
+}
+
+.article-post{
+    margin-bottom: 15px;
+    border: 1px solid #555;
+}
+
+.row{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+

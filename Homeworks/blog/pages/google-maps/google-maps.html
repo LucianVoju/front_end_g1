@@ -1,0 +1,40 @@
+<html>
+ <head>
+    <title>Google Locatio</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="map-style.css">
+    <script src="https://use.fontawesome.com/f868e6b1e3.js"></script>
+    
+    
+   
+    
+    
+ </head>
+ <body>
+     
+     
+    <div class="container">
+      <h1>My Google Maps Demo</h1>
+      <div id="search-holder">
+        <input id="start-location" class="search" type="text" placeholder="enter start location"/>
+        <input id="destination-location" class="search" type="text" placeholder="enter destination location"/>
+        <button type="button" id="get-route-btn">Get route</button>
+      </div>
+      
+      <div id="map"></div>
+    </div>
+    <div id="weather">
+      
+    </div>
+    
+    
+    
+ <script type="text/javascript" src="map.js"></script>   
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbL1qgqI5jzxyVVcVi51zcbsbOBvLcZBk&libraries=places&callback=initMap" async defer></script>   
+ </body>
+ 
+ 
+</html>
